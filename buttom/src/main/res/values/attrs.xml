@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Buttom">
+        <attr name="buttom_type">
+            <enum name="flat" value="0"/>
+            <enum name="gradient" value="1"/>
+        </attr>
+
+        <attr name="buttom_gradient_type">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+
+        <attr name="buttom_gradient_orientation">
+            <enum name="top_bottom" value="0"/>
+            <enum name="right_left" value="1"/>
+            <enum name="bottom_top" value="2"/>
+            <enum name="left_right" value="3"/>
+        </attr>
+
+        <attr name="buttom_corner_radius" format="dimension"/>
+        <attr name="buttom_background_color" format="color"/>
+
+        <attr name="buttom_stroke_size" format="dimension"/>
+        <attr name="buttom_stroke_color" format="color" />
+
+        <attr name="buttom_gradient_radius" format="float" />
+        <attr name="buttom_gradient_start_color" format="color"/>
+        <attr name="buttom_gradient_end_color" format="color"/>
+
+    </declare-styleable>
+</resources>
