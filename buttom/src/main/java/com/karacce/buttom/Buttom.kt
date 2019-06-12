@@ -14,8 +14,8 @@ import android.util.AttributeSet
  */
 
 @SuppressLint("Recycle")
-class Buttom @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = R.attr.buttonStyle)
-    : AppCompatButton(context, attributeSet, defStyleAttr) {
+class Buttom @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null)
+    : AppCompatButton(context, attributeSet, R.attr.buttonStyle) {
 
     enum class Type(val value: Int) {
         FLAT(0),
@@ -46,6 +46,8 @@ class Buttom @JvmOverloads constructor(context: Context, attributeSet: Attribute
     private var gradientEndColor: Int? = null
 
     init {
+
+
         val buttomAttributes = context.obtainStyledAttributes(attributeSet, R.styleable.Buttom)
         buttomAttributes.use {
 

@@ -1,34 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btn"
-        android:layout_width="240dp"
-        android:layout_height="48dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="32dp">
 
-        android:text="BUTTON"/>
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat"
+            android:textColor="#01579B"
 
-    <com.karacce.buttom.Buttom
-        android:id="@+id/btm"
-        android:layout_width="240dp"
-        android:layout_height="48dp"
-        app:layout_constraintTop_toBottomOf="@id/btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="8dp"
+            app:buttom_type="flat"
+            app:buttom_background_color="#E1F5FE"
+            app:buttom_corner_radius="12dp"
+            app:buttom_stroke_size="2dp"
+            app:buttom_stroke_color="#01579B" />
 
-        android:text="BUTTON"
-        android:textColor="#FFFFFF"
-        />
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linear"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+
+            app:buttom_type="gradient"
+            app:buttom_gradient_type="linear"
+            app:buttom_gradient_orientation="left_right"
+            app:buttom_gradient_start_color="#A5D6A7"
+            app:buttom_gradient_end_color="#1B5E20"
+            app:buttom_corner_radius="12dp"/>
+
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radial"
+            android:textColor="#000000"
+            android:layout_marginTop="32dp"
+
+            app:buttom_type="gradient"
+            app:buttom_gradient_type="radial"
+            app:buttom_gradient_radius="225"
+            app:buttom_gradient_start_color="#FFF8E1"
+            app:buttom_gradient_end_color="#FF6F00"
+            app:buttom_corner_radius="12dp"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
