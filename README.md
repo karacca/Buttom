@@ -37,7 +37,7 @@ dependencies {
 ### Samples
 <img src="screenshots/flat.png" width="360">
 
-```
+```xml
         <com.karacce.buttom.Buttom
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@ dependencies {
 
 <img src="screenshots/linear.png" width="360">
 
-```
+```xml
         <com.karacce.buttom.Buttom
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@ dependencies {
 
 <img src="screenshots/radial.png" width="360">
 
-```
+```xml
         <com.karacce.buttom.Buttom
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
