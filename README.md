@@ -34,4 +34,57 @@ dependencies {
 | stroke_color | Stroke color |
 | corner_radius| Corner radius |
 
+### Samples
+<img src="screenshots/flat.png" width="360">
+
+```
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat"
+            android:textColor="#01579B"
+
+            app:buttom_type="flat"
+            app:buttom_background_color="#E1F5FE"
+            app:buttom_corner_radius="12dp"
+            app:buttom_stroke_size="2dp"
+            app:buttom_stroke_color="#01579B" />
+```
+
+<img src="screenshots/linear.png" width="360">
+
+```
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linear"
+            android:textColor="#FFFFFF"
+
+            app:buttom_type="gradient"
+            app:buttom_gradient_type="linear"
+            app:buttom_gradient_orientation="left_right"
+            app:buttom_gradient_start_color="#A5D6A7"
+            app:buttom_gradient_end_color="#1B5E20"
+            app:buttom_corner_radius="12dp"/>
+
+```
+
+
+<img src="screenshots/radial.png" width="360">
+
+```
+        <com.karacce.buttom.Buttom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radial"
+            android:textColor="#000000"
+	    
+            app:buttom_type="gradient"
+            app:buttom_gradient_type="radial"
+            app:buttom_gradient_radius="225"
+            app:buttom_gradient_start_color="#FFF8E1"
+            app:buttom_gradient_end_color="#FF6F00"
+            app:buttom_corner_radius="12dp"/>
+
+```
 
