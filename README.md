@@ -4,7 +4,7 @@
 Buttom is a customizable button for Android written in kotlin.
 ## Installation
 **1.** Add it in your root build.gradle file.
-```
+```groovy
 allprojects {
 	repositories {
 		...
@@ -13,7 +13,7 @@ allprojects {
 }
 ```
 **2.** Add the dependency
-```
+```groovy
 dependencies {
 	  implementation 'com.github.karacce:Buttom:v1.0'
 }
